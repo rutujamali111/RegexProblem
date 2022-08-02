@@ -25,4 +25,14 @@ public class Regex {
         return m2.matches(); 
 	}
 
+	public boolean isValidMail(String mail) {
+		String email = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^-]+(?:\\.[a-zA-Z0-9_!#$%&'*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$"; 
+        Pattern emil = Pattern.compile(email); 
+        if (mail == null) { 
+            return false; 
+        } 
+        Matcher m3 = emil.matcher(mail);
+        return m3.matches();
+	}
+
 }

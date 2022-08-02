@@ -10,6 +10,9 @@ public class RegexTest {
         
         String liname = "mali"; 
         System.out.println(reg.isValidLastName(liname)); 
+        
+        String mail = "abc.xyz@bl.co.in"; 
+        System.out.println(reg.isValidMail(mail)); 
 
 	}
 
