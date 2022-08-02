@@ -15,4 +15,14 @@ public class Regex {
         return m1.matches();
 	}
 
+	public boolean isValidLastName(String liname) {
+		String lname = "^[A-Z][A-Za-z]{2,}"; 
+        Pattern lnme = Pattern.compile(lname); 
+        if (liname == null) { 
+            return false; 
+        } 
+        Matcher m2 = lnme.matcher(liname);
+        return m2.matches(); 
+	}
+
 }
