@@ -1,0 +1,10 @@
+package userRegistration;
+
+public class RegexTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
