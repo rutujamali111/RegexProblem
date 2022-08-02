@@ -17,7 +17,7 @@ public class RegexTest {
         String no = "91 9309813565"; 
         System.out.println(reg.isValidNo(no)); 
         
-        String pass = "Admin1234"; 
+        String pass = "Adminret1"; 
         System.out.println(reg.isValidPwd(pass)); 
 
 	}
