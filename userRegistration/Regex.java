@@ -46,4 +46,15 @@ public class Regex {
         return m4.matches(); 
 	}
 
+	public boolean isValidPwd(String pass) {
+		String password = "( *?[0-9a-zA-Z] *?){8,}";
+		//String password = "[^]{8,}";
+        Pattern pwd = Pattern.compile(password); 
+        if (pass ==null) { 
+            return false; 
+        } 
+        Matcher m5 = pwd.matcher(pass);
+        return m5.matches();
+	}
+
 }
