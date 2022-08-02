@@ -51,8 +51,10 @@ public class Regex {
 		//String password = "( *?[0-9a-zA-Z] *?){8,}";
 		//rule 2
 		//String password = "^(?=.*[A-Z])[0-9a-zA-Z]{8,}$";
-		//rule3
-		String password = "^(?=.*[A-Z])(?=.*[0-9])[0-9a-zA-Z]{8,}$";
+		//rule 3
+		//String password = "^(?=.*[A-Z])(?=.*[0-9])[0-9a-zA-Z]{8,}$";
+		//rule 4
+		String password = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[#?!@$%^&*-])[0-9a-zA-Z#?!@$%^&*-]{8,}$";
         Pattern pwd = Pattern.compile(password); 
         if (pass ==null) { 
             return false; 
