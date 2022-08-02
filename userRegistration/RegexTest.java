@@ -13,6 +13,9 @@ public class RegexTest {
         
         String mail = "abc.xyz@bl.co.in"; 
         System.out.println(reg.isValidMail(mail)); 
+        
+        String no = "91 9309813565"; 
+        System.out.println(reg.isValidNo(no)); 
 
 	}
 

@@ -35,4 +35,15 @@ public class Regex {
         return m3.matches();
 	}
 
+	public boolean isValidNo(String no) {
+		String mobile = "^(\\d{0,9}[\\s]?)?\\d{10}$"; 
+        Pattern mob = Pattern.compile(mobile); 
+        if (no == null) { 
+            return false; 
+        } 
+  
+        Matcher m4 = mob.matcher(no);
+        return m4.matches(); 
+	}
+
 }
